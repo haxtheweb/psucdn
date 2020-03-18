@@ -1,4 +1,4 @@
-var entry = "dist/app.js";
+var entry = "dist/build.js";
 window.process = {env: {NODE_ENV: 'production'}};
 var cdn = "./";
 if (window.__appCDN) {
@@ -9,7 +9,7 @@ try {
   // if a dynamic import fails, we bail over to the compiled version
   new Function('import("");');
   // insert polyfille for web animations
-  if (document && document.body && !('animate' in document.body)) {
+  if(!('animate' in document.body)) {
     var ani = document.createElement('script');
     ani.src = cdn + 'build/es6/node_modules/web-animations-js/web-animations-next-lite.min.js';
     def.parentNode.insertBefore(ani, def);
@@ -19,7 +19,6 @@ try {
   build.type = 'module';
   def.parentNode.insertBefore(build, def);
 } catch (err) {
-  console.warn(err);
   var ancient=false;
   try {
     if (typeof Symbol == "undefined") { // IE 11, at least try to serve a watered down site
