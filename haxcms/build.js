@@ -1,4 +1,4 @@
-var entry = "dist/build.js";
+var entry = "dist/build-haxcms.js";
 window.process = {env: {NODE_ENV: 'production'}};
 var cdn = "./";
 if (window.__appCDN) {
