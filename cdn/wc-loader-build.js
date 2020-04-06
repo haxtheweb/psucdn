@@ -57,7 +57,7 @@ try {
   }
 }
 if (!ancient) {
-  fetch(cdn + "wc-registry.json")
+  fetch(cdn + "wc-registry2.json")
   .then(function(response) {
     return response.json();
   })
