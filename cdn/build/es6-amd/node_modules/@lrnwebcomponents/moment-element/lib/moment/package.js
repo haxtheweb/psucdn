@@ -1,1 +1,0 @@
-var profile={resourceTags:{ignore:function(e,n){return"moment/moment"!=n},amd:function(e,n){return/\.js$/.test(e)}}};
