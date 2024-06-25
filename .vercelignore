@@ -1,0 +1,6 @@
+!cdn/**
+!haxcms/**
+!cdn/build/es6/node_modules
+!cdn/build/es6/node_modules/**
+!haxcms/build/es6/node_modules
+!haxcms/build/es6/node_modules/**
