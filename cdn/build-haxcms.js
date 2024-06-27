@@ -67,7 +67,7 @@ if (window.__appCDN) {
 }
 // reset styles that we apply to all hax sites for some level of normalization
 // across base HTML tags as well as css vars for styling system wide things from 1 place
-var baseResetStyles = 'build/es6/node_modules/@lrnwebcomponents/haxcms-elements/lib/base.css';
+var baseResetStyles = 'build/es6/node_modules/@haxtheweb/haxcms-elements/lib/base.css';
 // css files load faster when implemented this way
 var link = document.createElement('link');
 link.rel = 'stylesheet';
@@ -99,11 +99,18 @@ function haxcmsFallbackStylesError(e) {
       link.onerror = (e) => { haxcmsFallbackStylesError(e);};
       // if the module fails to load at the set CDN location, try to fail back to known sources
       if (cdn === "./") {
-          // psu fallback
-          haxCdn = "https://cdn.webcomponents.psu.edu/cdn/";
-          link.href = haxCdn + baseResetStyles;
-          linkDef.parentNode.insertBefore(link, linkDef);
-          console.warn(cdn + " failed to respond, styles back to alternative: " + haxCdn);
+        // hax cloud fallback
+        haxCdn = "https://cdn.hax.cloud/cdn/";
+        link.href = haxCdn + baseResetStyles;
+        linkDef.parentNode.insertBefore(link, linkDef);
+        console.warn(cdn + " failed to respond, styles back to alternative: " + haxCdn);
+      }
+      else if (cdn === "https://cdn.hax.cloud/cdn/") {
+        // psu mirror
+        haxCdn = "https://cdn.webcomponents.psu.edu/cdn/";
+        link.href = haxCdn + baseResetStyles;
+        linkDef.parentNode.insertBefore(link, linkDef);
+        console.warn(cdn + " failed to respond, styles back to alternative: " + haxCdn);
       }
       else if (cdn === "https://cdn.webcomponents.psu.edu/cdn/") {
           // known mirror
