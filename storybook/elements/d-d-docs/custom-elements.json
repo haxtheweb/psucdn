@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "d-d-docs.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "styleGuideTopics",
+          "type": {
+            "text": "object"
+          },
+          "default": "{\n  DDDelementsList: \"DDDelementsList\",\n  Breakpoints: \"Breakpoints\",\n  DataAttributes: \"DataAttributes\",\n  Borders: \"Borders\",\n  DefaultColors: \"DefaultColors\",\n  DefaultFunctionalColors: \"DefaultFunctionalColors\",\n  Gradients: \"Gradients\",\n  Radius: \"Radius\",\n  Shadows: \"Shadows\",\n  Spacing: \"Spacing\",\n  HeaderSample: \"HeaderSample\",\n  Typography: \"Typography\",\n  RichText: \"RichText\",\n  InstructionalComponents: \"InstructionalComponents\",\n  Buttons: \"Buttons\",\n  PageSections: \"PageSections\",\n}",
+          "description": "`d-d-docs`\n`design, develop, destroy the competition, documentation`"
+        },
+        {
+          "kind": "class",
+          "description": "",
+          "name": "DDDocs",
+          "members": [
+            {
+              "kind": "method",
+              "name": "renderDataAttributes"
+            },
+            {
+              "kind": "method",
+              "name": "renderHeaderSample"
+            },
+            {
+              "kind": "method",
+              "name": "renderDDDelementsList"
+            },
+            {
+              "kind": "method",
+              "name": "renderBorders"
+            },
+            {
+              "kind": "method",
+              "name": "renderBreakpoints"
+            },
+            {
+              "kind": "method",
+              "name": "renderDefaultColors"
+            },
+            {
+              "kind": "method",
+              "name": "renderDefaultFunctionalColors"
+            },
+            {
+              "kind": "method",
+              "name": "renderGradients"
+            },
+            {
+              "kind": "method",
+              "name": "renderRadius"
+            },
+            {
+              "kind": "method",
+              "name": "renderShadows"
+            },
+            {
+              "kind": "method",
+              "name": "renderSpacing"
+            },
+            {
+              "kind": "method",
+              "name": "renderTypography"
+            },
+            {
+              "kind": "method",
+              "name": "renderRichText"
+            },
+            {
+              "kind": "method",
+              "name": "renderButtons"
+            },
+            {
+              "kind": "method",
+              "name": "renderPageSections"
+            },
+            {
+              "kind": "method",
+              "name": "renderInstructionalComponents"
+            },
+            {
+              "kind": "method",
+              "name": "selectOption"
+            },
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "description": "Convention we use",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "option",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"*\"",
+              "attribute": "option"
+            },
+            {
+              "kind": "field",
+              "name": "options",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "attribute": "options"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "option",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"*\"",
+              "fieldName": "option"
+            },
+            {
+              "name": "options",
+              "type": {
+                "text": "array"
+              },
+              "fieldName": "options"
+            }
+          ],
+          "superclass": {
+            "name": "DDD",
+            "package": "@haxtheweb/d-d-d/d-d-d.js"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "styleGuideTopics",
+          "declaration": {
+            "name": "styleGuideTopics",
+            "module": "d-d-docs.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "DDDocs",
+            "module": "d-d-docs.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "DDDocs",
+          "declaration": {
+            "name": "DDDocs",
+            "module": "d-d-docs.js"
+          }
+        }
+      ]
+    }
+  ]
+}

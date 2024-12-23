@@ -1,0 +1,180 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "un-sdg.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "UnSdg",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "goal",
+              "privacy": "public",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "attribute": "goal",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "alt",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "attribute": "alt"
+            },
+            {
+              "kind": "field",
+              "name": "colorOnly",
+              "privacy": "public",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "color-only"
+            },
+            {
+              "kind": "field",
+              "name": "loading",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "'lazy'",
+              "attribute": "loading"
+            },
+            {
+              "kind": "field",
+              "name": "fetchpriority",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "'low'",
+              "attribute": "fetchpriority"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "loading",
+              "type": {
+                "text": "string"
+              },
+              "default": "'lazy'",
+              "fieldName": "loading"
+            },
+            {
+              "name": "fetchpriority",
+              "type": {
+                "text": "string"
+              },
+              "default": "'low'",
+              "fieldName": "fetchpriority"
+            },
+            {
+              "name": "goal",
+              "type": {
+                "text": "number"
+              },
+              "default": "1",
+              "fieldName": "goal"
+            },
+            {
+              "name": "color-only",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "colorOnly"
+            },
+            {
+              "name": "alt",
+              "type": {
+                "text": "string"
+              },
+              "default": "''",
+              "fieldName": "alt"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        },
+        {
+          "kind": "variable",
+          "name": "unSDGGoalData",
+          "type": {
+            "text": "array"
+          },
+          "default": "[\n  { name: 'No Poverty', color: '#e5243b', image: new URL('./lib/svgs/goal-1.svg', import.meta.url).href },\n  { name: 'Zero Hunger', color: '#dda63a', image: new URL('./lib/svgs/goal-2.svg', import.meta.url).href },\n  { name: 'Good Health and Well-being', color: '#4c9f38', image: new URL('./lib/svgs/goal-3.svg', import.meta.url).href },\n  { name: 'Quality Education', color: '#c5192d', image: new URL('./lib/svgs/goal-4.svg', import.meta.url).href },\n  { name: 'Gender Equality', color: '#ff3a21', image: new URL('./lib/svgs/goal-5.svg', import.meta.url).href },\n  { name: 'Clean Water and Sanitation', color: '#26bde2', image: new URL('./lib/svgs/goal-6.svg', import.meta.url).href },\n  { name: 'Affordable and Clean Energy', color: '#fcc30b', image: new URL('./lib/svgs/goal-7.svg', import.meta.url).href },\n  { name: 'Decent Work and Economic Growth', color: '#a21942', image: new URL('./lib/svgs/goal-8.svg', import.meta.url).href },\n  { name: 'Industry, Innovation and Infrastructure', color: '#fd6925', image: new URL('./lib/svgs/goal-9.svg', import.meta.url).href },\n  { name: 'Reduced Inequalities', color: '#dd1367', image: new URL('./lib/svgs/goal-10.svg', import.meta.url).href },\n  { name: 'Sustainable Cities and Communities', color: '#fd9d24', image: new URL('./lib/svgs/goal-11.svg', import.meta.url).href },\n  { name: 'Responsible Consumption and Production', color: '#bf8b2e', image: new URL('./lib/svgs/goal-12.svg', import.meta.url).href },\n  { name: 'Climate Action', color: '#3f7e44', image: new URL('./lib/svgs/goal-13.svg', import.meta.url).href },\n  { name: 'Life Below Water', color: '#0a97d9', image: new URL('./lib/svgs/goal-14.svg', import.meta.url).href },\n  { name: 'Life on Land', color: '#56c02b', image: new URL('./lib/svgs/goal-15.svg', import.meta.url).href },\n  { name: 'Peace, Justice and Strong Institutions', color: '#00689d', image: new URL('./lib/svgs/goal-16.svg', import.meta.url).href },\n  { name: 'Partnerships for the Goals', color: '#19486a', image: new URL('./lib/svgs/goal-17.svg', import.meta.url).href },\n]"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "UnSdg",
+          "declaration": {
+            "name": "UnSdg",
+            "module": "un-sdg.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "unSDGGoalData",
+          "declaration": {
+            "name": "unSDGGoalData",
+            "module": "un-sdg.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "UnSdg",
+            "module": "un-sdg.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "coverage/lcov-report/block-navigation.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "coverage/lcov-report/prettify.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
+      "path": "coverage/lcov-report/sorter.js",
+      "declarations": [],
+      "exports": []
+    }
+  ]
+}

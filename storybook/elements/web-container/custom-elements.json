@@ -1,0 +1,628 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "web-container.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "`web-container`",
+          "name": "WebContainerEl",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "installDependencies"
+            },
+            {
+              "kind": "method",
+              "name": "startDevServer"
+            },
+            {
+              "kind": "method",
+              "name": "startShell",
+              "parameters": [
+                {
+                  "name": "terminal"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "writeFile",
+              "parameters": [
+                {
+                  "name": "filename"
+                },
+                {
+                  "name": "content",
+                  "type": {
+                    "text": "string"
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "readFile",
+              "parameters": [
+                {
+                  "name": "filename"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "getLanguageFromFileEnding",
+              "parameters": [
+                {
+                  "name": "filename"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "setCodeEditor",
+              "parameters": [
+                {
+                  "name": "content"
+                },
+                {
+                  "name": "language",
+                  "default": "'javascript'"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "setupWebContainers"
+            },
+            {
+              "kind": "method",
+              "name": "runCommands",
+              "parameters": [
+                {
+                  "name": "commands"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "editorValueChanged",
+              "parameters": [
+                {
+                  "name": "e"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "updateFile",
+              "parameters": [
+                {
+                  "name": "e"
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "filesShown",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "attribute": "filesShown"
+            },
+            {
+              "kind": "field",
+              "name": "status",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Loading\"",
+              "attribute": "status",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "fname",
+              "privacy": "public",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "attribute": "fname",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "hideEditor",
+              "privacy": "public",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "hide-editor",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "hideTerminal",
+              "privacy": "public",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "hide-terminal",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "hideWindow",
+              "privacy": "public",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "hide-window",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "webcontainerInstance",
+              "type": {
+                "text": "null"
+              },
+              "default": "null"
+            },
+            {
+              "kind": "field",
+              "name": "files",
+              "privacy": "public",
+              "type": {
+                "text": "object"
+              },
+              "default": "{\n      'index.js': {\n        file: {\n          contents: ` `,\n        },\n      },\n      'package.json': {\n        file: {\n          contents: `\n            {\n              \"name\": \"hax-webcontainer\",\n              \"type\": \"module\",\n              \"dependencies\": {\n              }\n            }`,\n        },\n      },\n    }",
+              "attribute": "files"
+            },
+            {
+              "kind": "field",
+              "name": "commands",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]"
+            }
+          ],
+          "events": [
+            {
+              "name": "web-container-dependencies-installing",
+              "type": {
+                "text": "CustomEvent"
+              }
+            },
+            {
+              "name": "web-container-dependencies-installed",
+              "type": {
+                "text": "CustomEvent"
+              }
+            },
+            {
+              "name": "web-container-npm-start",
+              "type": {
+                "text": "CustomEvent"
+              }
+            },
+            {
+              "name": "web-container-server-ready",
+              "type": {
+                "text": "CustomEvent"
+              }
+            },
+            {
+              "name": "web-container-command-start",
+              "type": {
+                "text": "CustomEvent"
+              }
+            },
+            {
+              "name": "web-container-command-finished",
+              "type": {
+                "text": "CustomEvent"
+              }
+            }
+          ],
+          "attributes": [
+            {
+              "name": "fname",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "fieldName": "fname"
+            },
+            {
+              "name": "status",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Loading\"",
+              "fieldName": "status"
+            },
+            {
+              "name": "files",
+              "type": {
+                "text": "object"
+              },
+              "default": "{\n      'index.js': {\n        file: {\n          contents: ` `,\n        },\n      },\n      'package.json': {\n        file: {\n          contents: `\n            {\n              \"name\": \"hax-webcontainer\",\n              \"type\": \"module\",\n              \"dependencies\": {\n              }\n            }`,\n        },\n      },\n    }",
+              "fieldName": "files"
+            },
+            {
+              "name": "filesShown",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "fieldName": "filesShown"
+            },
+            {
+              "name": "hide-terminal",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "hideTerminal"
+            },
+            {
+              "name": "hide-editor",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "hideEditor"
+            },
+            {
+              "name": "hide-window",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "hideWindow"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "web-container",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "WebContainerEl",
+          "declaration": {
+            "name": "WebContainerEl",
+            "module": "web-container.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "WebContainerEl",
+            "module": "web-container.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "lib/web-container-doc-player.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "WebContainerDocPlayer",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "rebuildwebcontainerdocs"
+            },
+            {
+              "kind": "method",
+              "name": "getExample",
+              "parameters": [
+                {
+                  "name": "tagName"
+                },
+                {
+                  "name": "asText",
+                  "default": "true"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_getDataString",
+              "parameters": [
+                {
+                  "name": "data"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "codePenData"
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "element",
+              "privacy": "public",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "attribute": "element",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "project",
+              "privacy": "public",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "attribute": "project",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "importpath",
+              "privacy": "public",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "attribute": "importpath",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "version",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"latest\"",
+              "attribute": "version",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "rebuilding",
+              "privacy": "public",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "rebuilding",
+              "reflects": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "project",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "fieldName": "project"
+            },
+            {
+              "name": "importpath",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "fieldName": "importpath"
+            },
+            {
+              "name": "version",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"latest\"",
+              "fieldName": "version"
+            },
+            {
+              "name": "element",
+              "type": {
+                "text": "null"
+              },
+              "default": "null",
+              "fieldName": "element"
+            },
+            {
+              "name": "rebuilding",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "rebuilding"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "WebContainerDocPlayer",
+          "declaration": {
+            "name": "WebContainerDocPlayer",
+            "module": "lib/web-container-doc-player.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "WebContainerDocPlayer",
+            "module": "lib/web-container-doc-player.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "lib/web-container-wc-registry-docs.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "WebContainerWCRegistryDocs",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "selectChange",
+              "parameters": [
+                {
+                  "name": "e"
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "text",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Select the project to produce a demo for. This will make a best attempt'",
+              "attribute": "text"
+            },
+            {
+              "kind": "field",
+              "name": "file",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "'https://cdn.hax.cloud/cdn/wc-registry.json'",
+              "attribute": "file"
+            },
+            {
+              "kind": "field",
+              "name": "options",
+              "privacy": "public",
+              "type": {
+                "text": "object"
+              },
+              "default": "{\n      \"\": \"\"\n    }",
+              "attribute": "options"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "file",
+              "type": {
+                "text": "string"
+              },
+              "default": "'https://cdn.hax.cloud/cdn/wc-registry.json'",
+              "fieldName": "file"
+            },
+            {
+              "name": "text",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Select the project to produce a demo for. This will make a best attempt'",
+              "fieldName": "text"
+            },
+            {
+              "name": "options",
+              "type": {
+                "text": "object"
+              },
+              "default": "{\n      \"\": \"\"\n    }",
+              "fieldName": "options"
+            }
+          ],
+          "superclass": {
+            "name": "DDD",
+            "package": "@haxtheweb/d-d-d"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "WebContainerWCRegistryDocs",
+          "declaration": {
+            "name": "WebContainerWCRegistryDocs",
+            "module": "lib/web-container-wc-registry-docs.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "WebContainerWCRegistryDocs",
+            "module": "lib/web-container-wc-registry-docs.js"
+          }
+        }
+      ]
+    }
+  ]
+}
