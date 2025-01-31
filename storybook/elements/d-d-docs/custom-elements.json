@@ -12,7 +12,7 @@
           "type": {
             "text": "object"
           },
-          "default": "{\n  DDDelementsList: \"DDDelementsList\",\n  Breakpoints: \"Breakpoints\",\n  DataAttributes: \"DataAttributes\",\n  Borders: \"Borders\",\n  DefaultColors: \"DefaultColors\",\n  DefaultFunctionalColors: \"DefaultFunctionalColors\",\n  Gradients: \"Gradients\",\n  Radius: \"Radius\",\n  Shadows: \"Shadows\",\n  Spacing: \"Spacing\",\n  HeaderSample: \"HeaderSample\",\n  Typography: \"Typography\",\n  RichText: \"RichText\",\n  InstructionalComponents: \"InstructionalComponents\",\n  Buttons: \"Buttons\",\n  PageSections: \"PageSections\",\n}",
+          "default": "{ DDDelementsList: \"DDDelementsList\", Breakpoints: \"Breakpoints\", DataAttributes: \"DataAttributes\", Borders: \"Borders\", DefaultColors: \"DefaultColors\", DefaultFunctionalColors: \"DefaultFunctionalColors\", Gradients: \"Gradients\", Radius: \"Radius\", Shadows: \"Shadows\", Spacing: \"Spacing\", HeaderSample: \"HeaderSample\", Typography: \"Typography\", RichText: \"RichText\", InstructionalComponents: \"InstructionalComponents\", Buttons: \"Buttons\", PageSections: \"PageSections\", }",
           "description": "`d-d-docs`\n`design, develop, destroy the competition, documentation`"
         },
         {

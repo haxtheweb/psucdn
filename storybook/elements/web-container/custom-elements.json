@@ -198,7 +198,7 @@
               "type": {
                 "text": "object"
               },
-              "default": "{\n      'index.js': {\n        file: {\n          contents: ` `,\n        },\n      },\n      'package.json': {\n        file: {\n          contents: `\n            {\n              \"name\": \"hax-webcontainer\",\n              \"type\": \"module\",\n              \"dependencies\": {\n              }\n            }`,\n        },\n      },\n    }",
+              "default": "{ 'index.js': { file: { contents: ` `, }, }, 'package.json': { file: { contents: ` { \"name\": \"hax-webcontainer\", \"type\": \"module\", \"dependencies\": { } }`, }, }, }",
               "attribute": "files"
             },
             {
@@ -270,7 +270,7 @@
               "type": {
                 "text": "object"
               },
-              "default": "{\n      'index.js': {\n        file: {\n          contents: ` `,\n        },\n      },\n      'package.json': {\n        file: {\n          contents: `\n            {\n              \"name\": \"hax-webcontainer\",\n              \"type\": \"module\",\n              \"dependencies\": {\n              }\n            }`,\n        },\n      },\n    }",
+              "default": "{ 'index.js': { file: { contents: ` `, }, }, 'package.json': { file: { contents: ` { \"name\": \"hax-webcontainer\", \"type\": \"module\", \"dependencies\": { } }`, }, }, }",
               "fieldName": "files"
             },
             {
@@ -570,7 +570,7 @@
               "type": {
                 "text": "object"
               },
-              "default": "{\n      \"\": \"\"\n    }",
+              "default": "{ \"\": \"\" }",
               "attribute": "options"
             }
           ],
@@ -596,7 +596,7 @@
               "type": {
                 "text": "object"
               },
-              "default": "{\n      \"\": \"\"\n    }",
+              "default": "{ \"\": \"\" }",
               "fieldName": "options"
             }
           ],
