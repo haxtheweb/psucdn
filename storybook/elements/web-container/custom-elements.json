@@ -112,6 +112,10 @@
               ]
             },
             {
+              "kind": "method",
+              "name": "refreshIframe"
+            },
+            {
               "kind": "field",
               "name": "haxProperties",
               "static": true,

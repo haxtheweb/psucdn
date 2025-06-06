@@ -8,7 +8,7 @@
       "declarations": [
         {
           "kind": "class",
-          "description": "`example-haxcms-theme`",
+          "description": "`ExampleHaxcmsTheme`\n`ExampleHaxcmsTheme based on HAXCMS theming ecosystem`\n`This theme is an example of extending an existing theme component`",
           "name": "ExampleHaxcmsTheme",
           "members": [
             {
@@ -19,55 +19,51 @@
               "readonly": true
             },
             {
+              "kind": "method",
+              "name": "HAXCMSGlobalStyleSheetContent"
+            },
+            {
               "kind": "field",
-              "name": "__disposer",
+              "name": "_items",
+              "privacy": "public",
               "type": {
                 "text": "array"
               },
-              "default": "[]"
+              "default": "[]",
+              "attribute": "_items"
             },
             {
               "kind": "field",
-              "name": "editMode",
+              "name": "activeId",
               "privacy": "public",
               "type": {
-                "text": "boolean"
+                "text": "null"
               },
-              "description": "Edit mode which will be updated whenever HAXcms store\nhas been updated. It's also reflected to attribute which\nis a Polymer convention to allow it to be leveraged in\nCSS styling.",
-              "attribute": "editMode"
-            },
-            {
-              "kind": "field",
-              "name": "activeManifestIndex",
-              "privacy": "public",
-              "type": {
-                "text": "number"
-              },
-              "description": "Current array index of the active page that's been loaded.",
-              "attribute": "activeManifestIndex"
+              "default": "null",
+              "attribute": "activeId"
             }
           ],
           "attributes": [
             {
-              "name": "editMode",
+              "name": "activeId",
               "type": {
-                "text": "boolean"
+                "text": "null"
               },
-              "description": "Edit mode which will be updated whenever HAXcms store\nhas been updated. It's also reflected to attribute which\nis a Polymer convention to allow it to be leveraged in\nCSS styling.",
-              "fieldName": "editMode"
+              "default": "null",
+              "fieldName": "activeId"
             },
             {
-              "name": "activeManifestIndex",
+              "name": "_items",
               "type": {
-                "text": "number"
+                "text": "array"
               },
-              "description": "Current array index of the active page that's been loaded.",
-              "fieldName": "activeManifestIndex"
+              "default": "[]",
+              "fieldName": "_items"
             }
           ],
           "superclass": {
-            "name": "HAXCMSPolymerElementTheme",
-            "package": "@haxtheweb/haxcms-elements/lib/core/HAXCMSPolymerElementTheme.js"
+            "name": "HAXCMSLitElementTheme",
+            "package": "@haxtheweb/haxcms-elements/lib/core/HAXCMSLitElementTheme.js"
           },
           "tagName": "example-haxcms-theme",
           "customElement": true
@@ -76,14 +72,6 @@
       "exports": [
         {
           "kind": "custom-element-definition",
-          "declaration": {
-            "name": "ExampleHaxcmsTheme",
-            "module": "example-haxcms-theme.js"
-          }
-        },
-        {
-          "kind": "js",
-          "name": "ExampleHaxcmsTheme",
           "declaration": {
             "name": "ExampleHaxcmsTheme",
             "module": "example-haxcms-theme.js"

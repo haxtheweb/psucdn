@@ -12,7 +12,7 @@
           "type": {
             "text": "object"
           },
-          "default": "{ DDDelementsList: \"DDDelementsList\", Breakpoints: \"Breakpoints\", DataAttributes: \"DataAttributes\", Borders: \"Borders\", DefaultColors: \"DefaultColors\", DefaultFunctionalColors: \"DefaultFunctionalColors\", Gradients: \"Gradients\", Radius: \"Radius\", Shadows: \"Shadows\", Spacing: \"Spacing\", HeaderSample: \"HeaderSample\", Typography: \"Typography\", RichText: \"RichText\", InstructionalComponents: \"InstructionalComponents\", Buttons: \"Buttons\", PageSections: \"PageSections\", }",
+          "default": "{ DDDelementsList: \"DDDelementsList\", Breakpoints: \"Breakpoints\", DataAttributes: \"DataAttributes\", Borders: \"Borders\", DefaultColors: \"DefaultColors\", DefaultFunctionalColors: \"DefaultFunctionalColors\", Gradients: \"Gradients\", Radius: \"Radius\", Shadows: \"Shadows\", Spacing: \"Spacing\", HeaderSample: \"HeaderSample\", Typography: \"Typography\", RichText: \"RichText\", InstructionalComponents: \"InstructionalComponents\", Cards: \"Cards\", StepsList: \"Steps List\", Buttons: \"Buttons\", PageSections: \"PageSections\", }",
           "description": "`d-d-docs`\n`design, develop, destroy the competition, documentation`"
         },
         {
@@ -71,6 +71,14 @@
             {
               "kind": "method",
               "name": "renderRichText"
+            },
+            {
+              "kind": "method",
+              "name": "renderCards"
+            },
+            {
+              "kind": "method",
+              "name": "renderStepsList"
             },
             {
               "kind": "method",

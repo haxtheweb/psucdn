@@ -1,0 +1,1119 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "glossy-portfolio-theme.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "`glossy-portfolio-theme`",
+          "name": "GlossyPortfolioTheme",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "setLayout",
+              "parameters": [
+                {
+                  "name": "layout"
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "autoScroll",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true"
+            },
+            {
+              "kind": "field",
+              "name": "activeLayout",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"grid\"",
+              "attribute": "activeLayout"
+            },
+            {
+              "kind": "field",
+              "name": "activeParent",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "attribute": "activeParent"
+            },
+            {
+              "kind": "field",
+              "name": "relatedItems",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]"
+            },
+            {
+              "kind": "field",
+              "name": "childrenArray",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "attribute": "childrenArray"
+            },
+            {
+              "kind": "field",
+              "name": "__disposer"
+            },
+            {
+              "kind": "field",
+              "name": "activeItems",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "attribute": "activeItems"
+            },
+            {
+              "kind": "field",
+              "name": "relatedItem",
+              "privacy": "public",
+              "type": {
+                "text": "object"
+              },
+              "attribute": "relatedItem"
+            },
+            {
+              "kind": "field",
+              "name": "categoryTags",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "attribute": "categoryTags"
+            },
+            {
+              "kind": "field",
+              "name": "items",
+              "privacy": "public",
+              "type": {
+                "text": "object"
+              },
+              "attribute": "items"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "fieldName": "title"
+            },
+            {
+              "name": "activeLayout",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"grid\"",
+              "fieldName": "activeLayout"
+            },
+            {
+              "name": "activeItems",
+              "type": {
+                "text": "array"
+              },
+              "fieldName": "activeItems"
+            },
+            {
+              "name": "activeParent",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "fieldName": "activeParent"
+            },
+            {
+              "name": "relatedItem",
+              "type": {
+                "text": "object"
+              },
+              "fieldName": "relatedItem"
+            },
+            {
+              "name": "childrenArray",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "fieldName": "childrenArray"
+            },
+            {
+              "name": "categoryTags",
+              "type": {
+                "text": "array"
+              },
+              "fieldName": "categoryTags"
+            },
+            {
+              "name": "items",
+              "type": {
+                "text": "object"
+              },
+              "fieldName": "items"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            },
+            {
+              "name": "I18NMixin",
+              "package": "@haxtheweb/i18n-manager/lib/I18NMixin.js"
+            }
+          ],
+          "superclass": {
+            "name": "HAXCMSLitElementTheme",
+            "package": "@haxtheweb/haxcms-elements/lib/core/HAXCMSLitElementTheme.js"
+          },
+          "tagName": "glossy-portfolio-theme",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "GlossyPortfolioTheme",
+          "declaration": {
+            "name": "GlossyPortfolioTheme",
+            "module": "glossy-portfolio-theme.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "GlossyPortfolioTheme",
+            "module": "glossy-portfolio-theme.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "lib/glossy-portfolio-about.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "`glossy-portfolio-about`",
+          "name": "GlossyPortfolioAbout",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Title\"",
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "t",
+              "type": {
+                "text": "object"
+              },
+              "default": "{ ...this.t, title: \"Title\", }"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Title\"",
+              "fieldName": "title"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            },
+            {
+              "name": "I18NMixin",
+              "package": "@haxtheweb/i18n-manager/lib/I18NMixin.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "glossy-portfolio-about",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "GlossyPortfolioAbout",
+          "declaration": {
+            "name": "GlossyPortfolioAbout",
+            "module": "lib/glossy-portfolio-about.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "GlossyPortfolioAbout",
+            "module": "lib/glossy-portfolio-about.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "lib/glossy-portfolio-breadcrumb.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "`glossy-portfolio-breadcrumb`",
+          "name": "GlossyPortfolioBreadcrumb",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "_activeItemChanged",
+              "parameters": [
+                {
+                  "name": "active"
+                }
+              ],
+              "description": "Notice the change and build"
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "__disposer",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]"
+            },
+            {
+              "kind": "field",
+              "name": "items",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "attribute": "items"
+            },
+            {
+              "kind": "field",
+              "name": "includeHome",
+              "privacy": "public",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "include-home",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "t",
+              "type": {
+                "text": "object"
+              },
+              "default": "{ ...this.t, home: \"Home\", }"
+            },
+            {
+              "kind": "field",
+              "name": "editMode",
+              "privacy": "public",
+              "type": {
+                "text": "boolean"
+              },
+              "attribute": "edit-mode",
+              "reflects": true
+            }
+          ],
+          "attributes": [
+            {
+              "name": "items",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "fieldName": "items"
+            },
+            {
+              "name": "edit-mode",
+              "type": {
+                "text": "boolean"
+              },
+              "fieldName": "editMode"
+            },
+            {
+              "name": "include-home",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "includeHome"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            },
+            {
+              "name": "I18NMixin",
+              "package": "@haxtheweb/i18n-manager/lib/I18NMixin.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "glossy-portfolio-breadcrumb",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "GlossyPortfolioBreadcrumb",
+          "declaration": {
+            "name": "GlossyPortfolioBreadcrumb",
+            "module": "lib/glossy-portfolio-breadcrumb.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "GlossyPortfolioBreadcrumb",
+            "module": "lib/glossy-portfolio-breadcrumb.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "lib/glossy-portfolio-card.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "`glossy-portfolio-card`",
+          "name": "GlossyPortfolioCard",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Title\"",
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "thumbnail",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"https://img.freepik.com/premium-photo/cool-cat-wearing-pink-sunglasses-with-neon-light-background_514761-16858.jpg\"",
+              "attribute": "thumbnail"
+            },
+            {
+              "kind": "field",
+              "name": "slug",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"https://google.com\"",
+              "attribute": "slug"
+            },
+            {
+              "kind": "field",
+              "name": "tags",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "attribute": "tags"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Title\"",
+              "fieldName": "title"
+            },
+            {
+              "name": "thumbnail",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"https://img.freepik.com/premium-photo/cool-cat-wearing-pink-sunglasses-with-neon-light-background_514761-16858.jpg\"",
+              "fieldName": "thumbnail"
+            },
+            {
+              "name": "slug",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"https://google.com\"",
+              "fieldName": "slug"
+            },
+            {
+              "name": "tags",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "fieldName": "tags"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            },
+            {
+              "name": "I18NMixin",
+              "package": "@haxtheweb/i18n-manager/lib/I18NMixin.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "glossy-portfolio-card",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "GlossyPortfolioCard",
+          "declaration": {
+            "name": "GlossyPortfolioCard",
+            "module": "lib/glossy-portfolio-card.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "GlossyPortfolioCard",
+            "module": "lib/glossy-portfolio-card.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "lib/glossy-portfolio-footer.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "`glossy-portfolio-footer`",
+          "name": "GlossyPortfolioFooter",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Title\"",
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "homeLink",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "__disposer"
+            },
+            {
+              "kind": "field",
+              "name": "thumbnail",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "thumbnail"
+            },
+            {
+              "kind": "field",
+              "name": "link",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "link"
+            },
+            {
+              "kind": "field",
+              "name": "topItems",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "attribute": "topItems"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Title\"",
+              "fieldName": "title"
+            },
+            {
+              "name": "thumbnail",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "thumbnail"
+            },
+            {
+              "name": "link",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "link"
+            },
+            {
+              "name": "topItems",
+              "type": {
+                "text": "array"
+              },
+              "fieldName": "topItems"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            },
+            {
+              "name": "I18NMixin",
+              "package": "@haxtheweb/i18n-manager/lib/I18NMixin.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "glossy-portfolio-footer",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "GlossyPortfolioFooter",
+          "declaration": {
+            "name": "GlossyPortfolioFooter",
+            "module": "lib/glossy-portfolio-footer.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "GlossyPortfolioFooter",
+            "module": "lib/glossy-portfolio-footer.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "lib/glossy-portfolio-grid.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "`glossy-portfolio-grid`",
+          "name": "GlossyPortfolioGrid",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "capitalizeWords",
+              "parameters": [
+                {
+                  "name": "sentence"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_updateFilter",
+              "parameters": [
+                {
+                  "name": "target"
+                },
+                {
+                  "name": "currentTarget"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "updateFilter",
+              "parameters": [
+                {
+                  "name": "e"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "filterData"
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "filtersList",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "attribute": "filtersList"
+            },
+            {
+              "kind": "field",
+              "name": "filteredData",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "attribute": "filteredData"
+            },
+            {
+              "kind": "field",
+              "name": "data",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "attribute": "data"
+            },
+            {
+              "kind": "field",
+              "name": "activeFilter",
+              "type": {
+                "text": "string"
+              },
+              "default": "''"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "filteredData",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "fieldName": "filteredData"
+            },
+            {
+              "name": "data",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "fieldName": "data"
+            },
+            {
+              "name": "filtersList",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "fieldName": "filtersList"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            },
+            {
+              "name": "I18NMixin",
+              "package": "@haxtheweb/i18n-manager/lib/I18NMixin.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "glossy-portfolio-grid",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "GlossyPortfolioGrid",
+          "declaration": {
+            "name": "GlossyPortfolioGrid",
+            "module": "lib/glossy-portfolio-grid.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "GlossyPortfolioGrid",
+            "module": "lib/glossy-portfolio-grid.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "lib/glossy-portfolio-header.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "GlossyPortfolioHeader",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "openHamburger"
+            },
+            {
+              "kind": "method",
+              "name": "toKebabCase",
+              "parameters": [
+                {
+                  "name": "str"
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Title\"",
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "homeLink",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "__disposer"
+            },
+            {
+              "kind": "field",
+              "name": "thumbnail",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "thumbnail"
+            },
+            {
+              "kind": "field",
+              "name": "link",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "link"
+            },
+            {
+              "kind": "field",
+              "name": "topItems",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "attribute": "topItems"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Title\"",
+              "fieldName": "title"
+            },
+            {
+              "name": "thumbnail",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "thumbnail"
+            },
+            {
+              "name": "link",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "link"
+            },
+            {
+              "name": "topItems",
+              "type": {
+                "text": "array"
+              },
+              "fieldName": "topItems"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            },
+            {
+              "name": "I18NMixin",
+              "package": "@haxtheweb/i18n-manager/lib/I18NMixin.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "GlossyPortfolioHeader",
+          "declaration": {
+            "name": "GlossyPortfolioHeader",
+            "module": "lib/glossy-portfolio-header.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "GlossyPortfolioHeader",
+            "module": "lib/glossy-portfolio-header.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "lib/glossy-portfolio-home.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "`glossy-portfolio-home`",
+          "name": "GlossyPortfolioHome",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference",
+              "readonly": true
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Title\"",
+              "attribute": "title"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"Title\"",
+              "fieldName": "title"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            },
+            {
+              "name": "I18NMixin",
+              "package": "@haxtheweb/i18n-manager/lib/I18NMixin.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "glossy-portfolio-home",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "GlossyPortfolioHome",
+          "declaration": {
+            "name": "GlossyPortfolioHome",
+            "module": "lib/glossy-portfolio-home.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "GlossyPortfolioHome",
+            "module": "lib/glossy-portfolio-home.js"
+          }
+        }
+      ]
+    }
+  ]
+}

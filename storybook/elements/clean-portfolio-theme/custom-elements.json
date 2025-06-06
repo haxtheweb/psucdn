@@ -1,0 +1,544 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "clean-portfolio-theme.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "CleanPortfolioTheme",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true,
+              "readonly": true
+            },
+            {
+              "kind": "method",
+              "name": "_checkOverflow"
+            },
+            {
+              "kind": "method",
+              "name": "HAXCMSGlobalStyleSheetContent"
+            },
+            {
+              "kind": "method",
+              "name": "testEditMode",
+              "parameters": [
+                {
+                  "name": "e"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "_renderListing"
+            },
+            {
+              "kind": "method",
+              "name": "HAXSiteRenderXTagsItems",
+              "parameters": [
+                {
+                  "name": "items"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "setLayout",
+              "parameters": [
+                {
+                  "name": "layout"
+                }
+              ]
+            },
+            {
+              "kind": "method",
+              "name": "toggleSiteTheme",
+              "parameters": [
+                {
+                  "name": "e"
+                }
+              ]
+            },
+            {
+              "kind": "field",
+              "name": "siteTheme",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "site-theme",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "dataPrimary",
+              "privacy": "public",
+              "type": {
+                "text": "number"
+              },
+              "default": "2",
+              "attribute": "data-primary",
+              "reflects": true
+            },
+            {
+              "kind": "field",
+              "name": "selectedTag",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "attribute": "selectedTag"
+            },
+            {
+              "kind": "field",
+              "name": "activeLayout",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"text\"",
+              "attribute": "activeLayout"
+            },
+            {
+              "kind": "field",
+              "name": "menuOpen",
+              "privacy": "public",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "attribute": "menuOpen"
+            },
+            {
+              "kind": "field",
+              "name": "menuOverflow",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "attribute": "menuOverflow"
+            },
+            {
+              "kind": "field",
+              "name": "lastUpdated",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "attribute": "lastUpdated"
+            },
+            {
+              "kind": "field",
+              "name": "copyrightYear",
+              "privacy": "public",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "attribute": "copyrightYear"
+            },
+            {
+              "kind": "field",
+              "name": "HAXSiteCustomRenderRoutes",
+              "type": {
+                "text": "object"
+              },
+              "default": "{ \"x/tags\": { \"items\": this.HAXSiteRenderXTagsItems, } }"
+            },
+            {
+              "kind": "field",
+              "name": "autoScroll",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "true"
+            },
+            {
+              "kind": "field",
+              "name": "categoryTags",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "attribute": "categoryTags"
+            },
+            {
+              "kind": "field",
+              "name": "allTags",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "attribute": "allTags"
+            },
+            {
+              "kind": "field",
+              "name": "items",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "attribute": "items"
+            },
+            {
+              "kind": "field",
+              "name": "__disposer"
+            },
+            {
+              "kind": "field",
+              "name": "activeItem",
+              "privacy": "public",
+              "type": {
+                "text": "object"
+              },
+              "attribute": "activeItem"
+            },
+            {
+              "kind": "field",
+              "name": "activeParent",
+              "privacy": "public",
+              "type": {
+                "text": "object"
+              },
+              "attribute": "activeParent"
+            },
+            {
+              "kind": "field",
+              "name": "ancestorItem",
+              "privacy": "public",
+              "type": {
+                "text": "object"
+              },
+              "attribute": "ancestorItem"
+            },
+            {
+              "kind": "field",
+              "name": "prevSibling",
+              "privacy": "public",
+              "type": {
+                "text": "object"
+              },
+              "attribute": "prevSibling"
+            },
+            {
+              "kind": "field",
+              "name": "nextSibling",
+              "privacy": "public",
+              "type": {
+                "text": "object"
+              },
+              "attribute": "nextSibling"
+            },
+            {
+              "kind": "field",
+              "name": "topItems",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "attribute": "topItems"
+            },
+            {
+              "kind": "field",
+              "name": "activeTags",
+              "privacy": "public",
+              "type": {
+                "text": "array"
+              },
+              "attribute": "activeTags"
+            },
+            {
+              "kind": "field",
+              "name": "pageCurrent",
+              "privacy": "public",
+              "type": {
+                "text": "number"
+              },
+              "attribute": "pageCurrent"
+            },
+            {
+              "kind": "field",
+              "name": "pageTotal",
+              "privacy": "public",
+              "type": {
+                "text": "number"
+              },
+              "attribute": "pageTotal"
+            },
+            {
+              "kind": "field",
+              "name": "siteTitle",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "siteTitle"
+            },
+            {
+              "kind": "field",
+              "name": "homeLink",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "homeLink"
+            },
+            {
+              "kind": "field",
+              "name": "licenseName",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "licenseName"
+            },
+            {
+              "kind": "field",
+              "name": "licenseLink",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "licenseLink"
+            },
+            {
+              "kind": "field",
+              "name": "licenseImage",
+              "privacy": "public",
+              "type": {
+                "text": "string"
+              },
+              "attribute": "licenseImage"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "activeItem",
+              "type": {
+                "text": "object"
+              },
+              "fieldName": "activeItem"
+            },
+            {
+              "name": "activeParent",
+              "type": {
+                "text": "object"
+              },
+              "fieldName": "activeParent"
+            },
+            {
+              "name": "ancestorItem",
+              "type": {
+                "text": "object"
+              },
+              "fieldName": "ancestorItem"
+            },
+            {
+              "name": "prevSibling",
+              "type": {
+                "text": "object"
+              },
+              "fieldName": "prevSibling"
+            },
+            {
+              "name": "nextSibling",
+              "type": {
+                "text": "object"
+              },
+              "fieldName": "nextSibling"
+            },
+            {
+              "name": "topItems",
+              "type": {
+                "text": "array"
+              },
+              "fieldName": "topItems"
+            },
+            {
+              "name": "items",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "fieldName": "items"
+            },
+            {
+              "name": "activeTags",
+              "type": {
+                "text": "array"
+              },
+              "fieldName": "activeTags"
+            },
+            {
+              "name": "categoryTags",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "fieldName": "categoryTags"
+            },
+            {
+              "name": "allTags",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "fieldName": "allTags"
+            },
+            {
+              "name": "menuOverflow",
+              "type": {
+                "text": "array"
+              },
+              "default": "[]",
+              "fieldName": "menuOverflow"
+            },
+            {
+              "name": "menuOpen",
+              "type": {
+                "text": "boolean"
+              },
+              "default": "false",
+              "fieldName": "menuOpen"
+            },
+            {
+              "name": "copyrightYear",
+              "type": {
+                "text": "number"
+              },
+              "default": "0",
+              "fieldName": "copyrightYear"
+            },
+            {
+              "name": "pageCurrent",
+              "type": {
+                "text": "number"
+              },
+              "fieldName": "pageCurrent"
+            },
+            {
+              "name": "pageTotal",
+              "type": {
+                "text": "number"
+              },
+              "fieldName": "pageTotal"
+            },
+            {
+              "name": "siteTitle",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "siteTitle"
+            },
+            {
+              "name": "homeLink",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "homeLink"
+            },
+            {
+              "name": "activeLayout",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"text\"",
+              "fieldName": "activeLayout"
+            },
+            {
+              "name": "selectedTag",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "fieldName": "selectedTag"
+            },
+            {
+              "name": "lastUpdated",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\"",
+              "fieldName": "lastUpdated"
+            },
+            {
+              "name": "licenseName",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "licenseName"
+            },
+            {
+              "name": "licenseLink",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "licenseLink"
+            },
+            {
+              "name": "licenseImage",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "licenseImage"
+            },
+            {
+              "name": "data-primary",
+              "type": {
+                "text": "number"
+              },
+              "default": "2",
+              "fieldName": "dataPrimary"
+            },
+            {
+              "name": "site-theme",
+              "type": {
+                "text": "string"
+              },
+              "fieldName": "siteTheme"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            }
+          ],
+          "superclass": {
+            "name": "HAXCMSLitElementTheme",
+            "package": "@haxtheweb/haxcms-elements/lib/core/HAXCMSLitElementTheme.js"
+          }
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "CleanPortfolioTheme",
+          "declaration": {
+            "name": "CleanPortfolioTheme",
+            "module": "clean-portfolio-theme.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "declaration": {
+            "name": "CleanPortfolioTheme",
+            "module": "clean-portfolio-theme.js"
+          }
+        }
+      ]
+    }
+  ]
+}

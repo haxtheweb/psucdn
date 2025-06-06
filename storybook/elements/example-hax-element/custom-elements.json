@@ -29,39 +29,38 @@
               "name": "title",
               "privacy": "public",
               "type": {
-                "text": "null"
+                "text": "string"
               },
-              "default": "null",
+              "default": "\"\"",
               "attribute": "title"
             },
             {
               "kind": "field",
-              "name": "shiny",
-              "privacy": "public",
+              "name": "t",
               "type": {
-                "text": "boolean"
+                "text": "object"
               },
-              "default": "false",
-              "attribute": "shiny",
-              "reflects": true
+              "default": "{ ...this.t, title: \"Title\", }"
             }
           ],
           "attributes": [
             {
               "name": "title",
               "type": {
-                "text": "null"
+                "text": "string"
               },
-              "default": "null",
+              "default": "\"\"",
               "fieldName": "title"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
             },
             {
-              "name": "shiny",
-              "type": {
-                "text": "boolean"
-              },
-              "default": "false",
-              "fieldName": "shiny"
+              "name": "I18NMixin",
+              "package": "@haxtheweb/i18n-manager/lib/I18NMixin.js"
             }
           ],
           "superclass": {
